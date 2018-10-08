@@ -120,7 +120,7 @@
     justify-content: space-around;
     display: flex;
     flex-wrap: wrap;
-    margin-right: 10%; } }
+    margin-right: 2%; } }
 
 @media (min-width: 1024px) {
   .grid__col--12 {
