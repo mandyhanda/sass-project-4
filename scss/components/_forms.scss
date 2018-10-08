@@ -6,7 +6,10 @@
 }
 
 .form__input {
-    width: 90%;
+    
+    @include center($w:100%)
+    {
+    width: 100%;
     padding: 10px;
     margin: 20px auto;
     border-top: none;
@@ -15,4 +18,5 @@
     border-bottom: 2px solid $primary-color;
     @extend %font-sz;
     font-weight: bold;
+}
 }
