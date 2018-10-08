@@ -1,0 +1,76 @@
+@mixin center ($w){
+    max-width: $w;
+    margin:0 auto;
+    @content;
+}
+@mixin flexbox {
+    display:$flex;
+    flex-wrap: $flex-wrap;
+    @content;
+}
+@mixin button_f($background-color) {
+    background-color: $background-color;
+    width: 100%;
+    padding: 10px 0;
+    text-transform: uppercase;
+    border-radius: 5px;
+    border: none;
+    color:$white;
+    font-weight: 500;
+    margin: 10px 0;
+    @content;
+}
+
+@mixin desktop ($number:null,$align:null,$justify:null){
+@media(min-width:$break-l)
+{
+    flex-basis: $number;
+    text-align: $align;
+    justify-content: $justify;
+    @content;
+}
+
+}
+
+// @mixin mobile {
+//     @media(min-width:$break-s) {
+//         .grid__row
+// {
+   
+//     @include flexbox
+//     {
+//         font-size: 1.1rem;
+//          margin: 25px 0;
+//         flex-direction: $col;
+// }
+// }
+//     }
+    
+// }
+
+// @mixin desk_btn {
+//     flex: 1 10%;
+// padding: 10px;
+// margin: 5px;
+// text-align: center;
+// margin-bottom: 1em;
+// font-size: 1em;
+// color: white;
+// font-weight: 400;
+// text-decoration: none;
+// text-transform: uppercase;
+// padding: 0.75em 2em;
+// border: none;
+// border-radius: 0.35em;
+// @content;
+// }
+@mixin grid($background-color) {
+    background-color: $background-color;
+    text-align: center;
+    color: #828282;
+    border: none;
+    border-radius: 5px;
+    padding: 10px;
+    margin: 5px;
+    @content;
+}

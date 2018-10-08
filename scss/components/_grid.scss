@@ -1,0 +1,132 @@
+//grid layout
+
+.grid__row {
+    font-size: 18px;
+    margin: 20px 0;
+    @include flexbox {
+        flex-direction: $col;
+    }
+      @include desktop($justify: space-between){
+        flex-direction: $row;
+    }
+}
+.grid__col--3 {
+    @include desktop($number: 25%) {
+        margin-left: 5%;
+    }
+}
+
+.grid__col--4 {
+    @include desktop ($number: 30%);
+}
+
+.grid__col--6 {
+    @include desktop {
+        margin-left: 5%;
+        margin-right: auto;
+    }
+    
+}
+
+.grid__col--8 {
+    @include desktop ($number: 60%);
+}
+
+.grid__col--9 {
+    @include desktop ($number: 50%) {
+        margin: 0 auto;
+    }
+
+    ul {
+        @include desktop ($justify: space-around) {
+            @include flexbox {
+                margin-right: 10%;
+            }
+        }
+
+    }
+}
+
+.grid__col--12 {
+
+    @include desktop ($number: 100%, $justify: space-around) {
+        @include flexbox;
+        margin-top: 20px;
+    }
+
+    button {
+        flex-basis: 16%;
+    }
+}
+
+.grid__col--3.theme__colors {
+    @include grid($color-col-3)
+    {
+        text-align: center;
+       }
+    @include desktop ($number: 22%, $align: center);
+}
+
+.grid__col--4.theme__colors{
+    @include grid($color-col-4)
+    {
+        text-align: center;
+       }
+
+    @include desktop ($number: 30%, $align: center);
+}
+
+.grid__col--5.theme__colors{
+    @include grid($color-col-5)
+    {
+        text-align: center;
+       }
+
+    @include desktop ($number: 39%, $align: center);
+}
+
+.grid__col--6.theme__colors {
+    @include grid($color-col-6)
+    {
+        text-align: center;
+       }
+
+    @include desktop ($number: 47%, $align: center);
+}
+
+.grid__col--7.theme__colors {
+    @include grid($color-col-7)
+    {
+     text-align: center;
+    }
+     @include desktop ($number: 55%, $align: center);
+}
+
+.grid__col--8.theme__colors {
+    @include grid($color-col-8)
+    {
+        text-align: center;
+       }
+    @include desktop ($number: 64%, $align: center);
+}
+
+.grid__col--12.theme__colors {
+    @include grid($color-col-12)
+    {
+        text-align: center;
+       }
+    }
+    .grid__col--12.theme__colors {
+    @include desktop($number: 100%);
+}
+
+
+.theme__colors.centered {
+    @include desktop {
+       @include center($w:100%)
+       {
+           margin: 0 auto;
+       }
+    }
+}
+

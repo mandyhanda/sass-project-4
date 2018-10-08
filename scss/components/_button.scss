@@ -1,0 +1,24 @@
+//button layout
+
+.btn--default {
+    @include button_f($default-color);
+    
+}
+
+.btn--success{
+    @include button_f($success-color);
+    
+}
+
+.btn--error{
+    @include button_f($error-color);
+    
+}
+.btn--warning{
+    @include button_f($warning-color);
+    
+}
+.btn--info{
+    @include button_f($info-color);
+    
+}

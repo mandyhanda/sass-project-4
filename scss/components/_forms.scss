@@ -1,0 +1,18 @@
+//forms
+//logo
+
+.form__label--hidden {
+    display: none;
+}
+
+.form__input {
+    width: 90%;
+    padding: 10px;
+    margin: 20px auto;
+    border-top: none;
+    border-left: none;
+    border-right: none;
+    border-bottom: 2px solid $primary-color;
+    @extend %font-sz;
+    font-weight: bold;
+}
